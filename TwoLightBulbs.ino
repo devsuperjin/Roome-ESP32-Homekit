@@ -231,13 +231,13 @@ void clickButton(boolean state,int button){
    }else{
     buffer[3]=0x00; 
     }
-   if(button==0){
-    buffer[5]=0x00;
-  }else{
-    buffer[4]=0x01; 
-    buffer[5]=0x01; 
-    }
-    
+ //  if(button==0){
+   // buffer[5]=0x00;
+ // }else{
+//    buffer[4]=0x01; 
+   // buffer[5]=0x01; 
+   // }
+    buffer[5]=button;
   //01 40 01 xx 01 yy
  // Serial.print("state");
  //  Serial.println(buffer[3],HEX);
